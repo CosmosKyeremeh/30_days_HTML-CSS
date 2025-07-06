@@ -1,0 +1,150 @@
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to bottom, 
+    aliceblue 4px, 
+    rgb(242, 166, 238)
+  );
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  justify-content: center;
+}
+
+.container {
+  padding: 30px;
+  border: 1px solid rgb(244, 190, 219);
+  width: 100%;
+  max-width: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name{
+text-align: center;
+width: 60px;
+padding: .3rem;
+background-color: rgb(226, 213, 72);
+border-radius: 5px;
+border: none;
+font-size: 9px;
+font-weight: bold;
+margin-top: 30px;
+}
+
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #140404;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+    color: #686262;
+}
+
+.input-group[data-style="dark"] input {
+  background-color: black;
+  color: white;
+  opacity: 1;
+  text-align: center
+}
+
+.remember-me input {
+  width: auto;
+  margin-right: 8px;
+}
+
+.forgot-password {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    color: #999;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    color: #999;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    flex: 1;
+    height: 1px;
+    background: rgb(237, 168, 205);
+    top: 50%;
+    width: 45%;
+    height: 1px;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.google-icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96%;
+  padding: 12px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
