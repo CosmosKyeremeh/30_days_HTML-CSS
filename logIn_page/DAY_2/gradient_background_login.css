@@ -90,16 +90,9 @@ input {
 }
 
 .forgot-password {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.divider {
-    text-align: center;
-    margin: 20px 0;
-    position: relative;
-    color: #999;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .divider {
