@@ -126,74 +126,80 @@ h2{
     background: #e0e0e0;   
   }
 
-  /* Update the row3 styling */
+  /* Row 3 - Compact Player Controls */
 .row3 {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-  padding: 10px 10px;
+  gap: 8px;
+  padding: 8px 12px;
   margin-bottom: 1rem;
-  background: #f5f5f5;
-  border-radius: 8px;
-  /* border: 1px solid #e0e0e0; */
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
 }
 
-/* Player control buttons */
-.player {
-  display: flex;
+/* Unified button style for all controls */
+.player, .clear-button {
+  display: inline-flex;
   align-items: center;
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: white;
   border: 1px solid #d0d0d0;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.player:hover {
+.player:hover, .clear-button:hover {
   background: #f0f0f0;
 }
 
-.player i {
+.player i, .clear-button i {
   margin-right: 5px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
-/* Clear button */
-.row3 > i.fa-times {
-  margin-left: auto; /* pushes it to the right */
-  padding: 8px;
-  cursor: pointer;
-  color: #888;
-  font-size: 12px;
-  transition: color 0.2s ease;
+/* Tempo with horizontal separator */
+.tempo-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 12px;
 }
 
-.row3 > i.fa-times:hover {
-  color: #000;
+.tempo-separator {
+  width: 1px;
+  height: 20px;
+  background: #e0e0e0;
 }
 
-/* Tempo display */
 .tempo {
   display: flex;
-  flex-direction: column;
+  gap: 4px;
   align-items: center;
-  margin-left: 15px;
-  padding-left: 15px;
-  border-left: 1px solid #e0e0e0;
+  position: relative;
+  padding-left: 10px;
+  margin-left: auto;
+}
+
+.tempo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 1px;
+  background: #e0e0e0;
 }
 
 .tempo-text {
   font-size: 10px;
   color: #888;
   text-transform: uppercase;
-  margin-bottom: 2px;
 }
 
 .tempo-value {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #333;
 }

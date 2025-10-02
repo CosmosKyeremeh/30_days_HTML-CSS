@@ -1,0 +1,269 @@
+/* Get Started Page Styles */
+.getstarted-page .getstarted-hero {
+  background: linear-gradient(135deg, #e50914 0%, #b8070f 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.getstarted-page .getstarted-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.getstarted-page .getstarted-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.getstarted-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  align-items: start;
+}
+
+.getstarted-card {
+  background: #1a1f2e;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.getstarted-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.getstarted-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.getstarted-header p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+}
+
+.getstarted-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  background: #2d3748;
+  border: 2px solid #4a5568;
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e50914;
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.password-strength {
+  margin-top: 5px;
+}
+
+.strength-bar {
+  height: 4px;
+  background: #4a5568;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.strength-text {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.cta-button.full-width {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.getstarted-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #2d3748;
+}
+
+.getstarted-footer p {
+  color: #a0a0a0;
+}
+
+.link {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #b8070f;
+  text-decoration: underline;
+}
+
+/* Features Sidebar */
+.features-sidebar {
+  background: #1a1f2e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.features-sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: white;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.feature-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.feature-content p {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.4;
+}
+
+/* Auth Buttons in Header */
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #e50914;
+  color: #e50914;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #e50914;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .getstarted-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .features-sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .getstarted-page .getstarted-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .getstarted-page .getstarted-hero p {
+    font-size: 1.1rem;
+  }
+
+  .getstarted-card {
+    padding: 30px 25px;
+  }
+
+  .features-sidebar {
+    padding: 25px 20px;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .getstarted-page .getstarted-hero {
+    padding: 40px 0;
+  }
+
+  .getstarted-page .getstarted-hero h1 {
+    font-size: 2rem;
+  }
+
+  .getstarted-card {
+    padding: 25px 20px;
+  }
+
+  .getstarted-header h2 {
+    font-size: 1.7rem;
+  }
+}
