@@ -267,3 +267,18 @@
     font-size: 1.7rem;
   }
 }
+
+/* Footer */
+footer {
+  background: #1a1f2e;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #2d3748;
+  color: #a0a0a0;
+  font-size: 14px;
+}

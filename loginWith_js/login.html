@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Started - MovieBox</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body class="getstarted-page">
+    <section class="getstarted-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Join MovieBox Today</h1>
+          <p>
+            Unlimited movies, TV shows, and more. Watch anywhere. Cancel
+            anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <div class="getstarted-container">
+        <div class="getstarted-card">
+          <div class="getstarted-header">
+            <h2>Create Your Account</h2>
+            <p>Start your free trial today</p>
+          </div>
+
+          <form class="getstarted-form" id="signup-form">
+            <div class="form-group">
+              <label for="fullname">Surname first</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Create a password"
+              />
+              <div class="password-strength">
+                <div class="strength-bar"></div>
+                <span class="strength-text">Password strength</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+                placeholder="Confirm your password"
+              />
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">
+                I agree to the <a href="#" class="link">Terms of Service</a> and
+                <a href="#" class="link">Privacy Policy</a>
+              </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">
+                Send me special offers and updates
+              </label>
+            </div>
+
+            <button type="submit" class="cta-button full-width">
+              Start Your Free Trial
+            </button>
+          </form>
+
+          <div class="getstarted-footer">
+            <p>
+              Already have an account?
+              <a href="login.html" class="link">Sign In</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="features-sidebar">
+          <h3>Why Join MovieBox?</h3>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">🎬</div>
+              <div class="feature-content">
+                <h4>Unlimited Entertainment</h4>
+                <p>Access thousands of movies and TV shows</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📱</div>
+              <div class="feature-content">
+                <h4>Watch Anywhere</h4>
+                <p>Stream on your phone, tablet, laptop, and TV</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🚫</div>
+              <div class="feature-content">
+                <h4>Cancel Anytime</h4>
+                <p>No contracts, cancel online anytime</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⭐</div>
+              <div class="feature-content">
+                <h4>Personalized For You</h4>
+                <p>Recommendations based on your taste</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy; BongR&. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/getstarted.js"></script>
+  </body>
+</html>
