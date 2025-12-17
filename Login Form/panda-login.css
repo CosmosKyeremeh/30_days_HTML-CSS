@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #2e9ce1;
+  background-color: #b3dbf3;
 }
 
 .container {
@@ -21,7 +21,12 @@ body {
 form {
   width: 23.75em;
   height: 20.5em;
-  background : #ffffff;
+  /* background : #ffffff; */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);           
+  -webkit-backdrop-filter: blur(30px);   
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: absolute;
   transform: translate(-50%, -50%);
   top: calc(50% + 3.8em);
@@ -38,7 +43,7 @@ form {
   align-items: center;
   justify-content: start;
   gap: 10px;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .userpass i {
@@ -54,6 +59,7 @@ form input {
   border: none;
   border-bottom: 0.12em solid #3f3554;
   outline: none;
+  background: none;
 }
 
 form input:focus {
@@ -98,7 +104,7 @@ form button {
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: #5cbbf7;
+  background-color: #5cb1f7;
   color: #2e0d30;
   text-transform: uppercase;
   font-weight: 600;
@@ -108,7 +114,9 @@ form button {
 }
 
 form button:hover {
-  background-color: #2e9ce1;
+  background-color: #8abedc;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 form button:active {
