@@ -98,6 +98,7 @@ body {
         url('executiveMeeting2.jpg');
     background-size: cover;
     background-position: center;
+    filter: blur(5px);
 }
 
 /* Gradient Text */
